@@ -23,12 +23,13 @@ export function ProjectCard({ project, index = 0 }) {
         ref={ref}
         className={cx(styles.card, 'reveal', isVisible && 'is-visible')}
         style={{ transitionDelay: `${Math.min(index, 5) * 80}ms` }}
-      >
-        <div className={styles.iconWrap}>
-          <Icon name="layers" size={20} />
-        </div>
-        <h3 className={styles.title}>{project.title}</h3>
-        <p className={styles.description}>{project.description}</p>
+      ><a href={project.links.github} target="_blank" rel="noopener noreferrer">
+          <div className={styles.iconWrap}>
+            <Icon name="layers" size={20} />
+          </div>
+          <h3 className={styles.title}>{project.title}</h3>
+          <p className={styles.description}>{project.description}</p>
+        </a>
 
         <div className={styles.stack}>
           {project.stack.map((tech) => (
