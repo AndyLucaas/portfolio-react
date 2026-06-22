@@ -1,0 +1,28 @@
+.section {
+  padding-block: var(--space-8) var(--space-9);
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.certSection {
+  margin-top: var(--space-8);
+}
+
+.certTitle {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-5);
+}
+
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .certGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,45 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+  margin-top: var(--space-9);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding-block: var(--space-7);
+}
+
+.name {
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.role {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.credits {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  text-align: right;
+  line-height: 1.6;
+}
+
+.credits a {
+  color: var(--color-accent);
+}
+
+@media (max-width: 640px) {
+  .inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .credits {
+    text-align: center;
+  }
+}
