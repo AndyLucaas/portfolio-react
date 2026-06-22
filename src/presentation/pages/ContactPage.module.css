@@ -1,0 +1,57 @@
+.section {
+  padding-block: var(--space-8) var(--space-9);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.infoCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.cardTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: var(--space-5);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.infoList li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+}
+
+.infoList svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.infoList a {
+  color: var(--color-text-primary);
+}
+
+.infoList a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

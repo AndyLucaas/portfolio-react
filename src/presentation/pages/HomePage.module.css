@@ -1,0 +1,38 @@
+.section {
+  padding-block: var(--space-8);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-5);
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+@media (max-width: 860px) {
+  .skillsGrid,
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  .sectionHeader {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 860px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

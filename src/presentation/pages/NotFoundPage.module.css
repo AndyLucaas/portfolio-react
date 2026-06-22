@@ -1,0 +1,21 @@
+.section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-4);
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+.message {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
