@@ -14,12 +14,12 @@
 .avatar {
   width: 280px;
   height: 350px;
-  border-radius: 10%;
+  border-radius: 2%;
   background: linear-gradient(135deg, var(--surface), var(--accent));
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 20px 20px 60px rgba(78, 146, 255, 0.2);
+  box-shadow: 20px 20px 60px rgba(39, 121, 255, 0.2);
   border: 10px solid var(--accent);
 
   margin-bottom: var(--space-5);
