@@ -25,7 +25,7 @@ export function Footer() {
           © {year} {profile.fullName}. {t.common.allRightsReserved}
           <br />
           {t.common.builtWith}{' '}
-          <a href="https://github.com/AndyLucaas" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/AndyLucaas/portfolio-react" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           .
