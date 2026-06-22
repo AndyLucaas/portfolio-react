@@ -7,7 +7,7 @@ import { Icon } from '../components/common/Icon';
 import { useScrollReveal } from '../../core/hooks/useScrollReveal';
 import { cx } from '../../core/utils/classNames';
 import styles from './AboutPage.module.css';
-
+import pdp from '/pictures/profile.PNG';
 /**
  * AboutPage — profile summary, languages, and direct contact info.
  */
@@ -22,7 +22,7 @@ export function AboutPage() {
 
       <div ref={ref} className={cx(styles.grid, 'reveal', isVisible && 'is-visible')}>
         <div className={styles.summaryCol}>
-          <div className={styles.avatar}>{profile.initials}</div>
+          <div className={styles.avatar}><img src={pdp} alt="Profile" className={styles.pdp} /></div>
           <p className={styles.summary}>{profile.summary}</p>
 
           {profile.resumeUrl && (

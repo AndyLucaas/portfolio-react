@@ -7,14 +7,15 @@ export const cvDataEn = {
     fullName: 'Andy Lucas ANDRIAMANANA',
     title: 'Junior DevOps Engineer',
     summary:
-      'Passionate about DevOps, automation, and cloud environments. Strong skills in Linux administration, CI/CD, Ansible, Docker containerization, Kubernetes orchestration, and AWS (EC2) deployment.',
+      'Passionate about DevOps, automation, and cloud environments. Strong skills in Linux administration, CI/CD, Ansible, Docker containerization, Kubernetes orchestration, and AWS (IAM, EC2, EKS) deployment.',
     email: 'andylucas.js@gmail.com',
     phone: '+261 38 34 252 71',
     location: 'Antananarivo, Madagascar',
     resumeUrl: '/documents/Andy_Lucas_ANDRIAMANANA_CV.pdf',
+    initial: '/pictures/profile.PNG',
     socialLinks: [
       { id: 'github', label: 'GitHub', url: 'https://github.com/AndyLucaas', icon: 'github' },
-      { id: 'linkedin', label: 'LinkedIn', url: '#', icon: 'linkedin' },
+      { id: 'linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/andy-lucas-1080aa244/', icon: 'linkedin' },
       { id: 'email', label: 'Email', url: 'mailto:andylucas.js@gmail.com', icon: 'mail' },
       { id: 'phone', label: 'Phone', url: 'tel:+261383425271', icon: 'phone' },
     ],
@@ -40,7 +41,7 @@ export const cvDataEn = {
     { id: 'ansible', name: 'Ansible', category: 'Scripting & Automation' },
     { id: 'prometheus', name: 'Prometheus', category: 'Monitoring' },
     { id: 'grafana', name: 'Grafana', category: 'Monitoring' },
-    { id: 'aws', name: 'AWS (EC2, EKS)', category: 'Cloud' },
+    { id: 'aws', name: 'AWS (IAM, EC2, EKS)', category: 'Cloud' },
   ],
 
   projects: [
@@ -54,7 +55,9 @@ export const cvDataEn = {
         'Orchestration with Kubernetes.',
       ],
       stack: ['Docker', 'Kubernetes', 'AWS EC2'],
-      links: {},
+      links: {
+        github: 'https://github.com/AndyLucaas/shopflow-kubernetes.git'
+      },
     },
     {
       id: 'infra-automation-monitoring',
@@ -67,7 +70,9 @@ export const cvDataEn = {
         'Monitoring implementation with Prometheus and Grafana.',
       ],
       stack: ['Linux', 'Ansible', 'Prometheus', 'Grafana'],
-      links: {},
+      links: {
+        github: 'https://github.com/AndyLucaas/ansible-project.git'
+      },
     },
   ],
 
@@ -119,14 +124,14 @@ export const cvDataEn = {
       title: 'Introduction to Agile Development and Scrum',
       issuer: 'IBM',
       date: 'June 2026',
-      url: null,
+      url: 'https://www.coursera.org/account/accomplishments/records/6BIB8I12KQWC',
     },
     {
       id: 'ibm-devops-essentials',
       title: 'DevOps Essentials',
       issuer: 'IBM',
       date: 'June 2026',
-      url: null,
+      url: 'https://coursera.org/share/ce954c0f8fb56faaffa080ea3422c8c0',
     },
   ],
 };

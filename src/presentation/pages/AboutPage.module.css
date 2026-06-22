@@ -8,19 +8,20 @@
   gap: var(--space-7);
   align-items: start;
 }
-
+.pdp {
+  border-radius: 2%;
+}
 .avatar {
-  display: inline-flex;
+  width: 280px;
+  height: 350px;
+  border-radius: 10%;
+  background: linear-gradient(135deg, var(--surface), var(--accent));
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 76px;
-  height: 76px;
-  border-radius: var(--radius-lg);
-  background: var(--color-accent-soft);
-  color: var(--color-accent);
-  font-family: var(--font-mono);
-  font-size: 1.6rem;
-  font-weight: 700;
+  box-shadow: 20px 20px 60px rgba(78, 146, 255, 0.2);
+  border: 10px solid var(--accent);
+
   margin-bottom: var(--space-5);
 }
 

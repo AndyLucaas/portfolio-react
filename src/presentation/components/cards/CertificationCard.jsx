@@ -6,6 +6,7 @@ import styles from './CertificationCard.module.css';
  */
 export function CertificationCard({ certification }) {
   return (
+    <a href={certification.url} target="_blank" rel="noopener noreferrer">
     <div className={styles.card}>
       <div className={styles.iconWrap}>
         <Icon name="award" size={18} />
@@ -17,5 +18,6 @@ export function CertificationCard({ certification }) {
         </p>
       </div>
     </div>
+    </a>
   );
 }
