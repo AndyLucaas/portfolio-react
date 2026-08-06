@@ -1,1 +1,16 @@
-
+name: CI
+on: 
+  push:
+    branches:
+      - main
+      - 'features/**'
+  pull_request: 
+  
+jobs:
+  build:
+    runs-on: ubuntu-slim
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        
+    
